@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
         navbar.classList.remove("borderless");
         menuList.classList.remove("show");
         overlay.classList.remove("show");
-        menuIcon.src = "./assets/images/icons/menu.svg";
     };
 
     menuBtn.addEventListener("click", () => {
