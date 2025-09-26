@@ -67,7 +67,7 @@ function createProjectCard() {
         card.className = "card";
         const tags = items.tags.map(tag => `<span>${tag}</span>`).join('');
         card.innerHTML = `
-        <img src=${items.image} alt="${items.title}" class="projects-card-img" />
+        <img src="${items.image}" alt="${items.title}" class="projects-card-img" />
             <div class="projects-card-ctx pt24">
                 <div>
                     <h4 class="pb16">${items.title}</h4>
