@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anugerah Gari</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-bar-container">
+                <a href="./index.html"><img src="./assets/images/logo/logo.svg" alt="logo"></a>
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#aboutme">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="./assets/docs/Resume.docx" id="cv">Download CV</a></li>
+                    </ul>
+                </div>
+                <button class="button-expand">
+                    <img src="./assets/images/icons/menu.svg" alt="menu" id="menu-icon">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="wrapper">
+                <div class="hero-ctx">
+                    <div class="hero-ctx-left">
+                        <h1 class="pb24">Hi, I’m Anugerah</h1>
+                        <h3 class="pb24">Fullstack Developer & UI/UX Designer</h3>
+                        <p class="pb24">I don’t make project just for a job, i make project to help people problem.</p>
+                        <div class="hero-ctx-btn pt24 pb24">
+                            <button class="btn-primary" onclick="scrollToTarget('projects')">View My Project</button>
+                            <button class="btn-secondary" onclick="scrollToTarget('contact')">Get in touch</button>
+                        </div>
+                        <div class="hero-ctx-sosmed">
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/anugerah170405"><img
+                                            src="./assets/images/icons/github.svg" alt="github"></a>
+                                    <a href="http://www.youtube.com/@anugerahdev"><img
+                                            src="./assets/images/icons/youtube.svg" alt="youtube"></a>
+                                    <a href="mailto:anugerahgari170405@gmail.com"><img
+                                            src="./assets/images/icons/gmail.svg" alt="gmail"></a>
+                                    <a href="https://www.linkedin.com/in/anugerah-gari-736986329/"><img
+                                            src="./assets/images/icons/linkedin.svg" alt="linkedin"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hero-ctx-right">
+                        <img src="./assets/images/profile.png" alt="" class="profile">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutme">
+            <div class="wrapper">
+                <h2 class="pb24">About Me</h2>
+                <p class="subtitle">Passionate developer with 2+ years of experience creating digital solutions that
+                    make a difference.</p>
+                <div class="aboutme-ctx pt64 pb64">
+                    <div class="aboutme-ctx-left">
+                        <div>
+                            <p class="pb24">I'm Anugerah Gari, an Informatics student at Universitas Klabat, Indonesia.
+                                I am passionate about programming and currently focusing on Dart, Python, and web
+                                development to strengthen my technical skills and build impactful projects.</p>
+                            <p class="pb24">I’m eager to keep learning, explore new technologies, and apply my skills to
+                                create
+                                meaningful digital solutions.</p>
+                            <p class="pb24">When I'm not coding, you'll find me exploring new technologies, contributing
+                                to
+                                open-source projects, or hiking the beautiful trails around the Bay Area.</p>
+                        </div>
+
+                        <div class="aboutme-ctx-stats pt24">
+                            <div>
+                                <h2>10+</h2>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div>
+                                <h2>2+</h2>
+                                <p>Years of Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aboutme-ctx-right">
+                        <div class="info-card info-card-border">
+                            <div class="info-card-left">
+                                <img src="./assets/images/icons/code.svg" alt="code">
+                            </div>
+                            <div class="info-card-right">
+                                <b>Clean Code</b>
+                                <p class="mt16">Writing maintainable, scalable, and efficient code is my passion.</p>
+                            </div>
+                        </div>
+                        <div class="info-card info-card-border">
+                            <div class="info-card-left">
+                                <img src="./assets/images/icons/palette.svg" alt="code">
+                            </div>
+                            <div class="info-card-right">
+                                <b>Design Focus</b>
+                                <p class="mt16">Crafting beautiful user interfaces with attention to detail and
+                                    usability.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info-card info-card-border">
+                            <div class="info-card-left">
+                                <img src="./assets/images/icons/bolt.svg" alt="code">
+                            </div>
+                            <div class="info-card-right">
+                                <b>Performance</b>
+                                <p class="mt16">Optimizing applications for speed and exceptional user experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="projects">
+            <div class="wrapper">
+                <h2 class="pb24">Featured Projects</h2>
+                <p class="subtitle">A showcase of my recent work, featuring web applications, mobile apps, and other
+                    digital
+                    solutions.</p>
+                <div id="project-cards" class="card-ctx pt64 pb64">
+                    <!-- <div class="card">
+                        <img src="./assets/images/Mockup.png" alt="project1">
+                        <div class="projects-card-ctx pt24">
+                            <div>
+                                <h4 class="pb16">Title</h4>
+                                <p class="pb16">Description</p>
+                            </div>
+                            <div>
+                                <div class="projects-card-tags pb16">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                </div>
+                                <div class="projects-card-btn">
+                                    <button class="btn-secondary btn-icon btn-demo">Demo</button>
+                                    <button class="btn-secondary btn-icon btn-code">Code</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="skills">
+            <div class="wrapper">
+                <h2 class="pb24">Skills & Expertise</h2>
+                <p class="subtitle">A comprehensive overview of my technical skills and proficiency levels across
+                    different
+                    technologies and tools.</p>
+                <div id="skills-cards" class="card-ctx pt64 pb64">
+                    <!-- <div class="card py20 px20">
+                        <b class="mb16">Front End</b>
+
+                        <div class="text-bar">
+                            <p>CSS</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="bar">
+                            <div class="percent-bar" style="width: 85%;"></div>
+                        </div>
+
+                        <div class="text-bar">
+                            <p>Bootstrap</p>
+                            <p>78%</p>
+                        </div>
+                        <div class="bar">
+                            <div class="percent-bar" style="width: 78%;"></div>
+                        </div>
+
+                        <div class="text-bar">
+                            <p>Figma</p>
+                            <p>92%</p>
+                        </div>
+                        <div class="bar">
+                            <div class="percent-bar" style="width: 92%;"></div>
+                        </div>
+
+                        <div class="text-bar">
+                            <p>UI</p>
+                            <p>88%</p>
+                        </div>
+                        <div class="bar">
+                            <div class="percent-bar" style="width: 88%;"></div>
+                        </div>
+
+                        <div class="text-bar">
+                            <p>UX</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="bar">
+                            <div class="percent-bar" style="width: 80%;"></div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="skills-bottom">
+                    <b>Technologies I Work With</b>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Sql Lite</span>
+                        <span class="tag">Visual Studio</span>
+                        <span class="tag">Flutter & Dart</span>
+                        <span class="tag">Microsoft Office</span>
+                        <span class="tag">Google Spreadsheet</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="wrapper">
+                <h2 class="pb24">Get in Touch</h2>
+                <p class="subtitle">Ready to start your next project? I'd love to hear from you. Send me a message and
+                    I'll
+                    respond as soon as possible.</p>
+                <div class="contact-ctx pt64">
+                    <div class="contact-ctx-left">
+                        <b>Let's work together</b>
+                        <p>I'm always interested in new opportunities and exciting projects. Whether you're a startup
+                            looking to build your first product or an established company wanting to improve your
+                            digital
+                            presence, I'm here to help.</p>
+
+                        <div class="info-card">
+                            <div class="info-card-left">
+                                <img src="./assets/images/icons/mail.svg" alt="code">
+                            </div>
+                            <div class="info-card-right">
+                                <b>Email</b>
+                                <p>anugerahgari170405@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-card-left">
+                                <img src="./assets/images/icons/chat_bubble.svg" alt="code">
+                            </div>
+                            <div class="info-card-right">
+                                <b>Whatsapp</b>
+                                <p>085173133427</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-card-left">
+                                <img src="./assets/images/icons/location_on.svg" alt="code">
+                            </div>
+                            <div class="info-card-right">
+                                <b>Location</b>
+                                <p>Airmadidi, sulawesi utara</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-ctx-right">
+                        <div class="contact-container contact-form">
+                            <b>Send a message</b>
+                            <form action="mailto:anugerahgari170405@gmail.com" method="post" class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="firstname">Firstname</label>
+                                        <input type="text" id="firstname" name="firstname" placeholder="Anugerah"
+                                            required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="lastname">Lastname</label>
+                                        <input type="text" id="lastname" name="lastname" placeholder="Gari" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="anugerah@gmail.com"
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" placeholder="Project inquiry">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="5"
+                                        placeholder="Tell me about your project"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn-primary btn-send">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-ctx">
+            <div class="footer-brand">
+                <a href="#"><img src="./assets/images/icons/footer.svg" alt="github"></a>
+                <p>Fullstack Developer & UI/UX Designer</p>
+                <div class="footer-socials">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/anugerah170405"><img src="./assets/images/icons/github.svg"
+                                    alt="github"></a>
+                            <a href="http://www.youtube.com/@anugerahdev"><img src="./assets/images/icons/youtube.svg"
+                                    alt="youtube"></a>
+                            <a href="mailto:anugerahgari170405@gmail.com"><img src="./assets/images/icons/gmail.svg"
+                                    alt="gmail"></a>
+                            <a href="https://www.linkedin.com/in/anugerah-gari-736986329/"><img
+                                    src="./assets/images/icons/linkedin.svg" alt="linkedin"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./assets/docs/Resume.docx">Download CV</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-services">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#home">Web Development</a></li>
+                    <li><a href="#about">Mobile App Development</a></li>
+                    <li><a href="#projects">Desktop Development</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 Anugerah Gari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="overlay"></div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
