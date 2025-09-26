@@ -42,7 +42,7 @@ const projects_data = [
     {
         title: "ChessBug",
         description: "ChessBug is a terminal-based chess game developed using the Python programming language. The project uses an Object-Oriented Programming approach and incorporates the Minimax algorithm to create a simple, yet effective, artificial intelligence for the game.",
-        image: "./assets/images/kospedia.png",
+        image: "./assets/images/chessbug.png",
         tags: ["python", "terminal", "OOP", "minimax"],
         demoLink: "https://colab.research.google.com/drive/18NtDfUMkFKO1PtUVkoDbTPOuidv37yqQ?usp=sharing",
         codeLink: "https://github.com/anugerah170405/Chess"
@@ -67,7 +67,7 @@ function createProjectCard() {
         card.className = "card";
         const tags = items.tags.map(tag => `<span>${tag}</span>`).join('');
         card.innerHTML = `
-        <img src="${items.image}" alt="${items.title}" class="projects-card-img" />
+        <img src=${items.image} alt="${items.title}" class="projects-card-img" />
             <div class="projects-card-ctx pt24">
                 <div>
                     <h4 class="pb16">${items.title}</h4>
