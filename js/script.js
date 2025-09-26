@@ -42,7 +42,7 @@ const projects_data = [
     {
         title: "ChessBug",
         description: "ChessBug is a terminal-based chess game developed using the Python programming language. The project uses an Object-Oriented Programming approach and incorporates the Minimax algorithm to create a simple, yet effective, artificial intelligence for the game.",
-        image: "./assets/images/chessbug.png",
+        image: "./assets/images/kospedia.png",
         tags: ["python", "terminal", "OOP", "minimax"],
         demoLink: "https://colab.research.google.com/drive/18NtDfUMkFKO1PtUVkoDbTPOuidv37yqQ?usp=sharing",
         codeLink: "https://github.com/anugerah170405/Chess"
