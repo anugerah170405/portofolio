@@ -34,7 +34,7 @@ const projects_data = [
     {
         title: "Kospedia",
         description: "Kospedia is a platform designed to simplify the process of searching for and renting boarding houses. The prototype was created using Figma, with a strong focus on a user-friendly interface (UI) and an intuitive user experience (UX).",
-        image: "./assets/images/Mockup.png",
+        image: "./assets/images/kospedia.png",
         tags: ["Figma", "UI", "UX"],
         demoLink: "https://www.figma.com/proto/Z9qv2ckIUZ44itqINvru6s/KosPedia?node-id=0-1&t=mrmuUOBM9kvGP1lm-1",
         codeLink: "https://www.figma.com/proto/Z9qv2ckIUZ44itqINvru6s/KosPedia?node-id=0-1&t=mrmuUOBM9kvGP1lm-1"
