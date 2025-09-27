@@ -10,8 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         navbar.classList.remove("borderless");
         menuList.classList.remove("show");
         overlay.classList.remove("show");
-        menuIcon.src = menuList.classList.contains("show") ? "./assets/images/icons/close.svg" : "./assets/images/icons/menu.svg";
-
+        menuIcon.src = "./assets/images/icons/menu.svg";
     };
 
     menuBtn.addEventListener("click", () => {
@@ -56,12 +55,12 @@ const projects_data = [
         demoLink: "https://github.com/anugerah170405/scheduler.git",
         codeLink: "https://github.com/anugerah170405/scheduler.git"
     },
-
-
+    
+    
 ];
 
 function createProjectCard() {
-    const projectsContainer = document.getElementById("project-cards");
+    const projectsContainer = document.getElementById("project-cards"); 
 
     projects_data.forEach(items => {
         const card = document.createElement("div");
@@ -131,7 +130,7 @@ function skillsFilter() {
         let skillsHtml = `
             <b class="mb16">${item.title}</b>
         `;
-
+        
         item.skills.forEach(skill => {
             skillsHtml += `
                 <div class="text-bar">
@@ -143,7 +142,7 @@ function skillsFilter() {
                 </div>
             `;
         });
-
+        
         card.innerHTML = skillsHtml;
 
         skillsContainer.appendChild(card);

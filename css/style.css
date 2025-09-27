@@ -103,10 +103,6 @@ nav button {
     transition: transform 0.3s ease;
 }
 
-nav button:hover {
-    transform: rotate(90deg);
-}
-
 nav button img {
     height: 32px;
     width: 32px;
@@ -697,6 +693,18 @@ footer li a:hover {
     .profile {
         width: 150px;
         height: 150px;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    .hero-ctx-left p{
+        font-size: 1rem;
     }
 
     .hero-ctx-btn {
