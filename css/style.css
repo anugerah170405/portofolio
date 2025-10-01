@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: "Literata", serif;
+    font-family: "Schibsted Grotesk", sans-serif;
     font-size: 1rem;
     margin: 0;
     padding: 0;
@@ -67,7 +67,7 @@ header {
 nav .menu-list {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 35px;
 }
 
 ul a {
