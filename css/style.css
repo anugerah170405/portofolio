@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 60px;
 }
 
 body {
@@ -92,7 +93,7 @@ ul a:hover::after {
     width: 100%;
 }
 
-nav button {
+.button-expand {
     display: none;
     align-items: center;
     justify-content: space-around;
@@ -105,7 +106,7 @@ nav button {
     transition: transform 0.3s ease;
 }
 
-nav button img {
+.button-expand img {
     height: 32px;
     width: 32px;
 }
@@ -583,7 +584,7 @@ footer li a:hover {
         transform: translateY(0);
     }
 
-    nav button {
+    .button-expand {
         display: flex;
     }
 

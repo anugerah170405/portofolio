@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const menuBtn = document.querySelector("nav button");
+    const menuBtn = document.querySelector("nav .button-expand");
     const menuList = document.querySelector("nav .menu-list");
     const menuIcon = document.getElementById("menu-icon");
     const navbar = document.querySelector(".nav-bar");
