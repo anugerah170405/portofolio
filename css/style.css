@@ -226,7 +226,6 @@ a {
 
 .aboutme-ctx {
     display: flex;
-    align-items: stretch;
     width: 100%;
     gap: 32px;
 }
@@ -241,8 +240,7 @@ a {
 .aboutme-ctx-right {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
+    align-items: stretch;
     gap: 20px;
 }
 
@@ -636,6 +634,11 @@ footer li a:hover {
     .footer-ctx {
         grid-template-columns: 1fr 1fr;
         text-align: center;
+    }
+
+    .info-card{
+        max-width: none;
+        width: 100%;
     }
 
 
